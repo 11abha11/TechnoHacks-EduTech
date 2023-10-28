@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Calculator-icon.png">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2 class="title">Calculator</h2>
+            <input type="text" placeholder="0" id="expression">
+            <button onclick="clr()" style="font-size: 17px;">CLR</button>
+            <button onclick="del()" style="font-size: 17px;">DEL</button>
+            <button class="sideButton" onclick="display('%')" style="font-weight: 900;">%</button>
+            <button class="sideButton" onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button class="sideButton" onclick="display('*')" style="font-size: 21px; font-weight: 800;">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button class="sideButton" onclick="display('-')" style="font-size: 21px;">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button class="sideButton" onclick="display('+')">+</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button class="equalButton" onclick="result()">=</button>
+        </div>
+    </div>
+</body>
+<script src="calc.js"></script>
+</html>

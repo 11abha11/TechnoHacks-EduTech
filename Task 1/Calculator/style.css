@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(0deg,rgba(203, 140, 216, 0.801),rgb(183, 240, 232));
+}
+
+.title{
+    padding: 1px 11px 0px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 600;
+    color: rgba(66, 65, 65, 0.863);
+}
+
+.heading{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.container  {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: none;
+}
+
+.calculator{
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 35px;
+    box-shadow: inset 1px 1px 15px rgba(245, 245, 245, 0.459), 3px 3px 15px rgb(0, 0, 0);
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4,85px);
+}
+
+input{
+    grid-column: span 4;
+    height: 120px;
+    width: 330px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background-color: rgba(27, 27, 27, 0.808);
+    box-shadow: inset -1px -1px 15px rgb(0, 0, 0), 1px 1px 15px rgba(128, 125, 125, 0.459);
+    border: none;
+    border-radius: 18px;
+    font-size: 45px;
+    text-align: right;
+    padding: 20px;
+    color: rgb(236, 231, 231);
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    color: rgb(82, 83, 83);
+    border-radius: 35%;
+    border: none;
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset 1px 1px 12px rgba(128, 125, 125, 0.459), 3px 3px 12px rgba(185, 183, 183, 0.671);
+}
+
+
+.equalButton{
+    width: 145px;
+    border-radius: 20px;
+    background-color: #cfa5f7d0;
+    font-size: 20px;
+    box-shadow: inset 1px 1px 15px rgba(128, 125, 125, 0.459), 3px 3px 15px rgba(185, 183, 183, 0.671);
+}
+
+.sideButton{
+    color: #a176ca;
+    font-weight: 750;
+}
