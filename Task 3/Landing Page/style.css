@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(125deg, rgba(238, 147, 230, 0.637),rgb(165, 213, 228));
+}
+  
+  nav {
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .link a {
+    padding: 16px;
+    padding-top: 32px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .link a:hover {
+    background-color: #0b1c7e;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  .left-container{
+    flex: 1;
+    background-image: url("https://c.wallhere.com/photos/a9/e1/Norway_nature_mountains-1316677.jpg!d");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .left-container img{
+    height: 70px;
+    width: 140px;
+    margin: 30px 30px;
+  }
+  
+  .left-content {
+    margin-top: 240px;
+    margin-left: 20px;
+    padding: 20px;
+    max-width: 380px;
+    text-align: left;
+  }
+  
+  .left-content h4 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #0b1c7e;
+  }
+  
+  .left-content p {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .right-container {
+    flex: 1.5;
+    position: relative;
+  }
+  
+  .right-container img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 180px;
+    max-width: 180px;
+    margin-left: 75px;
+  }
+  
+  .right-content {
+    text-align: right;
+    max-width: 600px;
+    margin-left: 140px;
+    margin-top: 140px;
+    padding: 32px;
+  }
+  
+  .right-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #0b1c7e;
+  }
+  
+  .right-content h4 {
+    margin-bottom: 32px;
+    margin-top: 2px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .right-content p {
+    margin-bottom: 50px;
+    color: rgb(80, 70, 70);
+  }
+  
+  .button {
+    margin-bottom: 50px;
+    min-width: 120px;
+    padding: 12px 16px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #0b1c7e;
+    cursor: pointer;
+  }
+  
+  .primary-button {
+    margin-right: 16px;
+    color: white;
+    background-color: #0b1c7e;
+  }
+  
+  .secondary-button {
+    color: #0b1c7e;
+    background-color: transparent;
+  }
+  
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+  }
+  
+  .socials span {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .socials span:hover {
+    color: #0b1c7e;
+  }
+  
+  @media (width < 780px) {
+    nav {
+      justify-content: center;
+    }
+  
+    .nav-links {
+      gap: 16px;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-content{
+      min-height: 700px;
+    }
+  
+    .left-content {
+      max-width: none;
+      margin: 96px 0;
+      text-align: center;
+    }
+  
+    .right-content {
+      min-height: 700px;
+    }
+  
+    .right-content img {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -100%);
+    }
+  
+    .right-content {
+      text-align: center;
+      margin: 140px auto;
+    }
+  
+    .socials {
+      justify-content: center;
+    }
+  }
+  
